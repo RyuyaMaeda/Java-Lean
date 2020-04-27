@@ -3,7 +3,6 @@ package kadai2;
 /**
  * 名前と年齢を入力すると占いの結果を表示するプログラム
  */
-
 public class Kadai2_3 {
     public static void main(String[] args) {
         System.out.println("ようこそ占いの館へ");
