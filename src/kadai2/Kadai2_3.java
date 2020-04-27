@@ -1,8 +1,10 @@
 package kadai2;
 
-//名前と年齢を入力すると占いの結果を表示するプログラム
+/**
+ * 名前と年齢を入力すると占いの結果を表示するプログラム
+ */
 
-public class kadai2_3 {
+public class Kadai2_3 {
     public static void main(String[] args) {
         System.out.println("ようこそ占いの館へ");
         System.out.println("あなたの名前を入力してください");
@@ -16,8 +18,4 @@ public class kadai2_3 {
         System.out.println(age + "歳の" + name + "さん、あなたの運気番号は" + fortune + "です");
         System.out.println("1:大吉2:中吉3:吉4:凶");
     }
-
-
-
-
 }
