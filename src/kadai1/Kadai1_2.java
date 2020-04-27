@@ -11,4 +11,3 @@ public class Kadai1_2 {
         System.out.println("縦幅" + a + "横幅" + b + "の長方形の面積は、" + c);
     }
 }
-
