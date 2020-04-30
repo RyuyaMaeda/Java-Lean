@@ -11,6 +11,7 @@ public class Kadai5_1 {
     public static void main(String[] args) {
         introduceOneself();
     }
+
     public static void introduceOneself() {
         String name = "前田";
         int age = 26;
