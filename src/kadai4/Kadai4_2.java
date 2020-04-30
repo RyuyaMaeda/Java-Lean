@@ -9,8 +9,8 @@ public class Kadai4_2 {
         for (int i = 0; i < moneyList.length; i++) {
             System.out.println(moneyList[i]);
         }
-        for (int number : moneyList) {
-            System.out.println(number);
+        for (int money : moneyList) {
+            System.out.println(money);
         }
     }
 }
