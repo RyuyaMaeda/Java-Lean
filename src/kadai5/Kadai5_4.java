@@ -23,11 +23,11 @@ public class Kadai5_4 {
                 ("底辺の長さ" + bottom + "cm、高さ" + height + "cmの三角形の面積は、" + triangleArea + "平方cm");
         System.out.println( "半径" + radius + "cmの円の面積は、" + circleArea + "平方cm");
     }
-    public static double calcTriangleArea (double bottom, double height) {
+    public static double calcTriangleArea(double bottom, double height) {
         double area = bottom * height * 0.5;
         return area;
     }
-    public static double calcCircleArea (double radius) {
+    public static double calcCircleArea(double radius) {
         double pi = 3.14;
         double area = pi * radius * radius;
         return area;
