@@ -16,12 +16,6 @@ public class Thief {
     }
 
     public Thief(String name) {
-        this(name, 40, 5);
-    }
-
-    public void print(){
-        System.out.println("名前は、" + this.name);
-        System.out.println("HPは、" + this.hp);
-        System.out.println("MPは、" + this.mp);
+        this(name, 40);
     }
 }
