@@ -1,4 +1,4 @@
-package kadai11;
+package kadai10;
 
 public class Hero {
     String name = "ミナト";
