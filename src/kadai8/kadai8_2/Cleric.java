@@ -1,7 +1,7 @@
 package kadai8.kadai8_2;
 
 /**
- * クラスClericに「名前」「HP」「最大HP」「MP」「最大MP」を属性として追加
+ * 練習問題8_1で作成したクラスClericに「名前」「HP」「最大HP」「MP」「最大MP」を属性として追加
  */
 public class Cleric {
     String name;

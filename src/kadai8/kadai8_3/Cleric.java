@@ -1,7 +1,7 @@
 package kadai8.kadai8_3;
 
 /**
- * クラスClericにMPを５消費してHPを最大まで回復するメソッドselfAid()を追加
+ * 練習問題8_2で作成したクラスClericにMPを５消費してHPを最大まで回復するメソッドselfAid()を追加
  */
 public class Cleric {
     String name;
