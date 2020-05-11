@@ -11,7 +11,7 @@ public class Cleric {
     final int MAX_MP = 10;
 
     public void selfAid() {
-        if(this.mp >= 5) {
+        if (this.mp >= 5) {
             System.out.println(this.name + "はセルフエイドを唱えた！");
             this.mp -= 5;
             this.hp = this.MAX_HP;
