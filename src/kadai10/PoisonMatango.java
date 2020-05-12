@@ -4,7 +4,6 @@ package kadai10;
  * 練習問題10-3
  * 親クラス Matango.java を利用し、仕様にそった子クラスの作成
  */
-
 public class PoisonMatango extends Matango {
     int poisonCount = 5;
 
