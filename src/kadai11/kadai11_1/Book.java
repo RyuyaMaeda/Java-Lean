@@ -1,6 +1,6 @@
 package kadai11.kadai11_1;
 
-public class Book extends TangibleAsset{
+public class Book extends TangibleAsset {
     String isbn;
 
     public Book(String name, int price, String color, String isbn) {
