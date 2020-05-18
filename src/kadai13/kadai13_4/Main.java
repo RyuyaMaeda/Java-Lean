@@ -11,9 +11,9 @@ package kadai13.kadai13_4;
  */
 public class Main {
     public static void main(String[] args) {
-        Hero h = new Hero();
-        h.setName("勇者");
-        h.setHp(100);
+        Hero hero = new Hero();
+        hero.setName("勇者");
+        hero.setHp(100);
         Wand wand = new Wand();
         wand.setName("鉄の杖");
         wand.setPower(10);
@@ -22,6 +22,6 @@ public class Main {
         wizard.setMp(200);
         wizard.setName("ブラックマジシャン");
         wizard.setWand(wand);
-        wizard.heal(h);
+        wizard.heal(hero);
     }
 }

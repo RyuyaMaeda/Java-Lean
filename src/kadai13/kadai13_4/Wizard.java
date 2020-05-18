@@ -31,7 +31,7 @@ public class Wizard {
 
     public void setMp(int mp) {
         if (mp < 0) {
-            throw new IllegalArgumentException("mpを設定できません。処理を中断。");
+            throw new IllegalArgumentException("mpを設定できません");
         }
         this.mp = mp;
     }
@@ -53,7 +53,7 @@ public class Wizard {
 
     public void setWand(Wand wand) {
         if (wand == null) {
-            throw new IllegalArgumentException("杖を装備してください。処理を中断。");
+            throw new IllegalArgumentException("杖を装備してください");
         }
         this.wand = wand;
     }
