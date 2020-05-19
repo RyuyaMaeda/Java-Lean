@@ -20,8 +20,8 @@ public class Account {
             return true;
         }
         if (o instanceof Account) {
-            Account account = (Account) o;
-            String s1 = this.accountNumber.trim();
+            Account a = (Account) o;
+            String s1 = a.accountNumber.trim();
             String s2 = this.accountNumber.trim();
             if (s1.equals(s2) == true) {
                 return true;
