@@ -6,6 +6,12 @@ public class Wizard {
     private String name;
     private Wand wand;
 
+    /**
+     * 勇者のhpを回復するメソッドです。
+     * 回復量は杖の魔力に比例します。
+     *
+     * @param hero 勇者
+     */
     public void heal(Hero hero) {
         int basePoint = 10;
         int recovPoint = (int) (basePoint * this.getWand().getPower());

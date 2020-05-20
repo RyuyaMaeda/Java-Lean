@@ -2,6 +2,10 @@ package kadai13.kadai13_4;
 
 public class Wand {
     private String name;
+
+    /**
+     * 杖の魔力
+     */
     private double power;
 
     public String getName() {
