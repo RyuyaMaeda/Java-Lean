@@ -15,15 +15,13 @@ public class Account {
         return "¥" + this.balance + "(口座番号 = " + this.accountNumber.trim() + ")";
     }
 
-    public boolean equals(Object o) {
-        if (this == o) {
+    public boolean equals(Object object) {
+        if (this == object) {
             return true;
         }
-        if (o instanceof Account) {
-            Account a = (Account) o;
-            String s1 = a.accountNumber.trim();
-            String s2 = this.accountNumber.trim();
-            if (s1.equals(s2) == true) {
+        if (object instanceof Account) {
+            Account account = (Account) object;
+            if (account.accountNumber.trim().equals(this.accountNumber.trim()) == true) {
                 return true;
             }
         }
