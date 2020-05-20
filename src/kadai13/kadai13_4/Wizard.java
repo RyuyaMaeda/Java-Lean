@@ -6,7 +6,7 @@ public class Wizard {
     private String name;
     private Wand wand;
 
-    void heal(Hero hero) {
+    public void heal(Hero hero) {
         int basePoint = 10;
         int recovPoint = (int) (basePoint * this.wand.getPower());
         hero.setHp(hero.getHp() + recovPoint);
