@@ -8,13 +8,33 @@ package kadai14;
  * ②口座番号が等しければ等価と判断する（口座番号の先頭に半角スペースが付けられた場合も、スペースを無視して判断する）
  */
 public class Account {
+
+    /**
+     * 口座番号
+     */
     private String accountNumber;
+
+    /**
+     * 残高(円)
+     */
     private int balance;
 
+    /**
+     * 文字列表現のメソッドです
+     *
+     * @return 残高と口座番号を含む文字列を返す
+     */
     public String toString() {
         return "¥" + this.balance + "(口座番号 = " + this.accountNumber.trim() + ")";
     }
 
+    /**
+     * 等価判定のメソッドです
+     * 口座番号が等しければ等価と判断する
+     *
+     * @param object
+     * @return 等価の場合trueを返す, 等価でない場合falseを返す
+     */
     public boolean equals(Object object) {
         if (this == object) {
             return true;
