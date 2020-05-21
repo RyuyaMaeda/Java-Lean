@@ -24,6 +24,7 @@ public class Account {
      *
      * @return 残高と口座番号を含む文字列を返す
      */
+    @Override
     public String toString() {
         return "¥" + this.balance + "(口座番号 = " + this.accountNumber.trim() + ")";
     }
@@ -35,6 +36,7 @@ public class Account {
      * @param other
      * @return 等価の場合trueを返す, 等価でない場合falseを返す
      */
+    @Override
     public boolean equals(Object other) {
         if (this == other) {
             return true;
@@ -48,9 +50,15 @@ public class Account {
         return false;
     }
 
+    /**
+     * 口座番号と残高を入力するコンストラクタです
+     *
+     * @param accountNumber
+     * @param balance
+     */
     public Account(String accountNumber, int balance) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
+        this.setAccountNumber(accountNumber);
+        this.setBalance(balance);
     }
 
     public String getAccountNumber() {
