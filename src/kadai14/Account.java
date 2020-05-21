@@ -32,15 +32,15 @@ public class Account {
      * 等価判定のメソッドです
      * 口座番号が等しければ等価と判断する
      *
-     * @param object
+     * @param other
      * @return 等価の場合trueを返す, 等価でない場合falseを返す
      */
-    public boolean equals(Object object) {
-        if (this == object) {
+    public boolean equals(Object other) {
+        if (this == other) {
             return true;
         }
-        if (object instanceof Account) {
-            Account account = (Account) object;
+        if (other instanceof Account) {
+            Account account = (Account) other;
             if (account.accountNumber.trim().equals(this.accountNumber.trim()) == true) {
                 return true;
             }
