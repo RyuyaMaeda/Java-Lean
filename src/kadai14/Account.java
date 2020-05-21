@@ -33,7 +33,7 @@ public class Account {
      * 等価判定のメソッドです
      * 口座番号が等しければ等価と判断する
      *
-     * @param other
+     * @param other 比較対象のAccountインスタンス
      * @return 等価の場合trueを返す, 等価でない場合falseを返す
      */
     @Override
@@ -53,8 +53,8 @@ public class Account {
     /**
      * 口座番号と残高を入力するコンストラクタです
      *
-     * @param accountNumber
-     * @param balance
+     * @param accountNumber 口座番号
+     * @param balance       残高
      */
     public Account(String accountNumber, int balance) {
         this.setAccountNumber(accountNumber);
