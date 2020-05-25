@@ -1,6 +1,9 @@
 package kadai16.kadai16_3;
 
-import java.util.*;
+import kadai16.kadai16_2.Hero;
+
+import java.util.Map;
+import java.util.HashMap;
 
 /**
  * 練習問題16-3

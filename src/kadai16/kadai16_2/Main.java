@@ -1,6 +1,7 @@
 package kadai16.kadai16_2;
 
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
 
 /**
  * 練習問題16-2
