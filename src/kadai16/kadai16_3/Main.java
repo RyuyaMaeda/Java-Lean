@@ -1,5 +1,7 @@
 package kadai16.kadai16_3;
 
+import kadai16.kadai16_2.Hero;
+
 import java.util.*;
 
 /**
