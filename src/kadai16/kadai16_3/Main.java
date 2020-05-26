@@ -5,6 +5,7 @@ import kadai16.kadai16_2.Hero;
 import java.util.Map;
 import java.util.HashMap;
 
+
 /**
  * 練習問題16-3
  * 練習16-2と同様に二人の勇者をインスタンス化し、各勇者が倒した敵の数（３、７）と勇者をペアでコレクションに格納
