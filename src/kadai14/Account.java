@@ -43,9 +43,7 @@ public class Account {
         }
         if (other instanceof Account) {
             Account account = (Account) other;
-            if (account.accountNumber.trim().equals(this.accountNumber.trim()) == true) {
-                return true;
-            }
+            return account.accountNumber.trim().equals(this.accountNumber.trim());
         }
         return false;
     }
