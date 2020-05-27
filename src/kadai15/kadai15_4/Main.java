@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         LocalDate now = LocalDate.now();
         LocalDate future = now.plusDays(100);
-        DateTimeFormatter formatDate = DateTimeFormatter.ofPattern("西暦yyyy年MM月dd日");
-        System.out.println(future.format(formatDate));
+        DateTimeFormatter formatedDate = DateTimeFormatter.ofPattern("西暦yyyy年MM月dd日");
+        System.out.println(future.format(formatedDate));
     }
 }
