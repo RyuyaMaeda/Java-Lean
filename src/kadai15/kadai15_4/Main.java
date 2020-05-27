@@ -1,7 +1,7 @@
 package kadai15.kadai15_4;
 
-import java.time.*;
-import java.time.format.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 /**
  * 練習文15-4
