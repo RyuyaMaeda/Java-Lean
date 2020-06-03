@@ -7,43 +7,61 @@ package algorithm.kadai1;
 public class Main {
     public static void main(String[] args) {
         System.out.print("西暦を入力してください");
-        int seireki = new java.util.Scanner(System.in).nextInt();
-        switch (seireki % 12) {
+        /**
+         * 西暦
+         */
+        int year = new java.util.Scanner(System.in).nextInt();
+        System.out.println(year + "年の干支は" + getNameByYear(year));
+    }
+
+    /**
+     * 西暦から干支の名前を求めるメソッドです。
+     *
+     * @param year 西暦
+     * @return 干支の名前を返す
+     */
+    public static String getNameByYear(int year) {
+        String name;
+        switch (year % 12) {
             case 0:
-                System.out.print(seireki + "年の干支は申です");
+                name = "申";
                 break;
             case 1:
-                System.out.print(seireki + "年の干支は酉です");
+                name = "酉";
                 break;
             case 2:
-                System.out.print(seireki + "年の干支は戌です");
+                name = "戌";
                 break;
             case 3:
-                System.out.print(seireki + "年の干支は亥です");
+                name = "亥";
                 break;
             case 4:
-                System.out.print(seireki + "年の干支は子です");
+                name = "子";
                 break;
             case 5:
-                System.out.print(seireki + "年の干支は丑です");
+                name = "丑";
                 break;
             case 6:
-                System.out.print(seireki + "年の干支は寅です");
+                name = "寅";
                 break;
             case 7:
-                System.out.print(seireki + "年の干支は卯です");
+                name = "卯";
                 break;
             case 8:
-                System.out.print(seireki + "年の干支は辰です");
+                name = "辰";
                 break;
             case 9:
-                System.out.print(seireki + "年の干支は巳です");
+                name = "巳";
                 break;
             case 10:
-                System.out.print(seireki + "年の干支は午です");
+                name = "午";
                 break;
             case 11:
-                System.out.print(seireki + "年の干支は未です");
+                name = "未";
+                break;
+            default:
+                throw new IllegalArgumentException("引数に負の値が渡されているため、該当する干支がありません");
         }
+        return name;
     }
 }
