@@ -1,6 +1,6 @@
 package algorithm.kadai2;
 
-public class Main {
+public class DiamondPrinter {
     public static void main(String[] args) {
         System.out.println("数値を入力してください");
         //入力された数値からひし形の高さを決定する
