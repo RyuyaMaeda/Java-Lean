@@ -10,16 +10,15 @@ import java.util.Arrays;
  */
 public class Sort {
     public static void main(String[] args) {
-        int[] indexNumbers = new int[10];
+        int[] inputNumbers = new int[10];
         System.out.println("整数を１０個入力してください");
         try {
-            for (int i = 0; i < indexNumbers.length; i++) {
-                indexNumbers[i] = new java.util.Scanner(System.in).nextInt();
+            for (int i = 0; i < inputNumbers.length; i++) {
+                inputNumbers[i] = new java.util.Scanner(System.in).nextInt();
             }
-            execute(indexNumbers);
-            for (int i = 0; i < indexNumbers.length; i++) {
-                System.out.println(indexNumbers[i]);
-            }
+            System.out.println("ソート前：" + Arrays.toString(inputNumbers));
+            execute(inputNumbers);
+            System.out.println("ソート後：" + Arrays.toString(inputNumbers));
         } catch (InputMismatchException e) {
             System.out.println("不正な値が入力されたため処理を中断しました。値は整数で入力してください");
         }
