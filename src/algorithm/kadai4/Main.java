@@ -7,18 +7,22 @@ package algorithm.kadai4;
  */
 public class Main {
     public static void main(String[] arg) {
-            CoinCase coinCase = new CoinCase();
-            coinCase.addCoins(500, 1);
-            coinCase.addCoins(100, 4);
-            coinCase.addCoins(5, 6);
-            coinCase.addCoins(10, 8);
-            coinCase.addCoins(50, 3);
-            coinCase.addCoins(500, 4);
-            coinCase.addCoins(1, 3);
-            coinCase.addCoins(50, 3);
-            coinCase.addCoins(50, 1);
-            coinCase.addCoins(50, 3);
-            System.out.println("指定した硬貨の枚数は" + coinCase.getCount(700) + "枚です");
-            System.out.println("貯金箱に入っているお金の総額は" + coinCase.getAmount() + "円です");
+        try {
+            CoinCase myCase = new CoinCase();
+            myCase.addCoins(700, 1);
+            myCase.addCoins(100, 4);
+            myCase.addCoins(5, 6);
+            myCase.addCoins(10, 8);
+            myCase.addCoins(50, 3);
+            myCase.addCoins(500, 4);
+            myCase.addCoins(1, 3);
+            myCase.addCoins(50, 3);
+            myCase.addCoins(50, 1);
+            myCase.addCoins(50, 3);
+            System.out.println("指定した硬貨の枚数は" + myCase.getCount(500) + "枚です");
+            System.out.println("貯金箱に入っているお金の総額は" + myCase.getAmount() + "円です");
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

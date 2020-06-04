@@ -3,7 +3,14 @@ package algorithm.kadai4;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * コインケースのクラス
+ * 500円、100円、50円、10円、5円、1円が、それぞれ何枚あるかを管理する。
+ */
 public class CoinCase {
+    /**
+     * 貯金箱
+     */
     Map<Integer, Integer> coinCase;
 
     /**
@@ -21,16 +28,17 @@ public class CoinCase {
 
     /**
      * 硬貨を追加するメソッドです。
+     * 500円、100円、50円、10円、5円、1円以外の硬貨が入った場合は例外を投げる。
      *
      * @param coinType 硬貨の種類
      * @param number   硬貨の枚数
      */
     public void addCoins(int coinType, int number) {
-        if (coinType != 500 && coinType != 100 && coinType != 50 && coinType != 10 && coinType != 5
-                && coinType != 1){
-            throw new NullPointerException("500,100,50,10,5,1円以外の硬貨は追加できません。指定値=" + coinType);
-        }
+        try {
             coinCase.put(coinType, coinCase.get(coinType) + number);
+        } catch (NullPointerException e) {
+            System.out.println("500 円、100 円、50 円、10 円、5 円、1 円以外の硬貨は追加できません");
+        }
     }
 
     /**
@@ -40,12 +48,7 @@ public class CoinCase {
      * @return 指定した硬貨の枚数を返す。
      */
     public int getCount(int coinType) {
-        if (coinType != 500 && coinType != 100 && coinType != 50 && coinType != 10 && coinType != 5
-                && coinType != 1){
-            throw new NullPointerException("500,100,50,10,5,1円以外の硬貨は存在しません。指定値=" + coinType);
-        }
-        int number = coinCase.get(coinType);
-        return number;
+        return coinCase.get(coinType);
     }
 
     /**
