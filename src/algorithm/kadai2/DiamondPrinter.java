@@ -2,39 +2,66 @@ package algorithm.kadai2;
 
 public class DiamondPrinter {
     public static void main(String[] args) {
-        System.out.println("数値を入力してください");
-        //入力された数値からひし形の高さを決定する
-        int height = new java.util.Scanner(System.in).nextInt() * 2 - 1;
-        int center = height / 2 + 1;
-     //   System.out.println("center=" + center);
-        // ひし形の上段を表示
-        upperDraw(center);
-        lowerDraw(center);
+        System.out.println("int型の数値を入力してください");
+        System.out.println(createDiamond(1));
+
     }
 
-    public static void upperDraw(int center) {
+    /**
+     * 指定した値からひし形を文字列で返すメソッドです
+     *
+     * @param value ひし形の高さを決める値
+     * @return ひし形全体のの文字列を返す
+     */
+    private static String createDiamond(int value) {
+        /**
+         * ひし形の高さ
+         */
+        int height = value * 2 - 1;
+        return createUpperDiamond(height) + createLowerDiamond(height);
+    }
+
+    /**
+     * 指定した高さのひし形の上半分を文字列で返すメソッドです
+     *
+     * @param height ひし形の高さ
+     * @return 指定の高さのひし形の上半分の文字列を返す
+     */
+    private static String createUpperDiamond(int height) {
+        String upperString = "";
+        int center = height / 2 + 1;
         for (int i = 0; i < center; i++) {
             for (int j = 0; j < center - i; j++) {
-                System.out.print(" ");
+                upperString += " ";
             }
-            System.out.print("*");
+            upperString += "*";
             for (int j = 0; j < i * 2; j++) {
-                System.out.print("*");
+                upperString += "*";
             }
-            System.out.print("\n");
+            upperString += "\n";
         }
+        return upperString;
     }
 
-    public static void lowerDraw(int center) {
+    /**
+     * 指定した高さのひし形の下半分を文字列で返すメソッドです
+     *
+     * @param height ひし形の高さ
+     * @return 指定の高さのひし形の下半分の文字列を返す
+     */
+    public static String createLowerDiamond(int height) {
+        String lowerString = "";
+        int center = height / 2 + 1;
         for (int i = center - 2; i >= 0; i--) {
             for (int j = 0; j < center - i; j++) {
-                System.out.print(" ");
+                lowerString += " ";
             }
-            System.out.print("*");
+            lowerString += "*";
             for (int j = 0; j < i * 2; j++) {
-                System.out.print("*");
+                lowerString += "*";
             }
-            System.out.print("\n");
+            lowerString += "\n";
         }
+        return lowerString;
     }
 }
