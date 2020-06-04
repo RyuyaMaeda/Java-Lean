@@ -3,6 +3,11 @@ package algorithm.kadai3;
 import java.util.InputMismatchException;
 import java.util.Arrays;
 
+/**
+ * 整数を 10 回入力し、小さい順に並べ替えて表示するプログラムを作成してください。
+ * 整数ではない値が入力された場合は例外を投げて処理を中断し、下記のメッセージをコンソールに表示してください。
+ * 表示するメッセージ：不正な値が入力されたため処理を中断しました。値は整数で入力してください。
+ */
 public class Sort {
     public static void main(String[] args) {
         int[] indexNumbers = new int[10];
