@@ -1,10 +1,16 @@
 package algorithm.kadai2;
 
+/**
+ * 演習問題2
+ * 以下の条件にしたがって、コンソールにひし形を描画する
+ * メソッドの引数にint型の数値を渡すようにする
+ * ひし形の高さは引数で渡す値によって変動するようにする
+ */
 public class DiamondPrinter {
     public static void main(String[] args) {
-        System.out.println("int型の数値を入力してください");
         System.out.println(createDiamond(1));
-
+        System.out.println(createDiamond(2));
+        System.out.println(createDiamond(3));
     }
 
     /**
