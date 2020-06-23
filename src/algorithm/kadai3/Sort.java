@@ -42,8 +42,9 @@ public class Sort {
                     swapped = false;
                 }
             }
-            if (swapped == true)
+            if (swapped == true) {
                 break;
+            }
         }
     }
 }
