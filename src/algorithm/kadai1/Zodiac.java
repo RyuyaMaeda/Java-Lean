@@ -9,47 +9,33 @@ public class Zodiac {
      * @return 干支の名前を返す
      */
     public String getNameByYear(int year) {
-        String name;
         switch (year % 12) {
             case 0:
-                name = "申";
-                break;
+                return "申";
             case 1:
-                name = "酉";
-                break;
+                return "酉";
             case 2:
-                name = "戌";
-                break;
+                return "戌";
             case 3:
-                name = "亥";
-                break;
+                return "亥";
             case 4:
-                name = "子";
-                break;
+                return "子";
             case 5:
-                name = "丑";
-                break;
+                return "丑";
             case 6:
-                name = "寅";
-                break;
+                return "寅";
             case 7:
-                name = "卯";
-                break;
+                return "卯";
             case 8:
-                name = "辰";
-                break;
+                return "辰";
             case 9:
-                name = "巳";
-                break;
+                return "巳";
             case 10:
-                name = "午";
-                break;
+                return "午";
             case 11:
-                name = "未";
-                break;
+                return "未";
             default:
                 throw new IllegalArgumentException("引数に負の値が渡されているため、該当する干支がありません");
         }
-        return name;
     }
 }
