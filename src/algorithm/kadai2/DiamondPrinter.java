@@ -11,13 +11,14 @@ public class DiamondPrinter {
         System.out.println(createDiamond(1));
         System.out.println(createDiamond(2));
         System.out.println(createDiamond(3));
+        System.out.println(createDiamond(4));
     }
 
     /**
      * 指定した値からひし形を文字列で返すメソッドです
      *
      * @param value ひし形の高さを決める値
-     * @return ひし形全体のの文字列を返す
+     * @return ひし形全体の文字列を返す
      */
     private static String createDiamond(int value) {
         /**
@@ -34,19 +35,19 @@ public class DiamondPrinter {
      * @return 指定の高さのひし形の上半分の文字列を返す
      */
     private static String createUpperDiamond(int height) {
-        String upperString = "";
+        StringBuilder stringBuilder = new StringBuilder();
         int center = height / 2 + 1;
         for (int i = 0; i < center; i++) {
             for (int j = 0; j < center - i; j++) {
-                upperString += " ";
+                stringBuilder.append(" ");
             }
-            upperString += "*";
+            stringBuilder.append("*");
             for (int j = 0; j < i * 2; j++) {
-                upperString += "*";
+                stringBuilder.append("*");
             }
-            upperString += "\n";
+            stringBuilder.append("\n");
         }
-        return upperString;
+        return stringBuilder.toString();
     }
 
     /**
@@ -56,18 +57,18 @@ public class DiamondPrinter {
      * @return 指定の高さのひし形の下半分の文字列を返す
      */
     public static String createLowerDiamond(int height) {
-        String lowerString = "";
+        StringBuilder stringBuilder = new StringBuilder();
         int center = height / 2 + 1;
         for (int i = center - 2; i >= 0; i--) {
             for (int j = 0; j < center - i; j++) {
-                lowerString += " ";
+                stringBuilder.append(" ");
             }
-            lowerString += "*";
+            stringBuilder.append("*");
             for (int j = 0; j < i * 2; j++) {
-                lowerString += "*";
+                stringBuilder.append("*");
             }
-            lowerString += "\n";
+            stringBuilder.append("\n");
         }
-        return lowerString;
+        return stringBuilder.toString();
     }
 }
